@@ -51,6 +51,7 @@
 		20AFC6DB24AD650A0042AB86 /* 2020-07-01 MobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2020-07-01 MobUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AFC6DF24AD650A0042AB86 /* _020_07_01_MobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _020_07_01_MobUITests.swift; sourceTree = "<group>"; };
 		20AFC6E124AD650A0042AB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AFC6ED24AD68200042AB86 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		20AFC6B924AD65070042AB86 /* 2020-07-01 Mob */ = {
 			isa = PBXGroup;
 			children = (
+				20AFC6ED24AD68200042AB86 /* README.md */,
 				20AFC6BA24AD65070042AB86 /* AppDelegate.swift */,
 				20AFC6BC24AD65070042AB86 /* SceneDelegate.swift */,
 				20AFC6BE24AD65070042AB86 /* ViewController.swift */,
