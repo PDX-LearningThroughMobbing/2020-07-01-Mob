@@ -37,6 +37,11 @@ Project Description
 
 Project description (What we will do):
 
+3 pieces of data.
+- time ticking up seconds
+- counter
+- connect to real data (e.g github forks)
+
     Come up with a simple (can be done in an hour and a half) project that hits as many of those concepts as possible
     
     Widget with updating data
