@@ -32,12 +32,14 @@ Project Description
     Things we want to do (Capture the concepts people would like to work on or learn about tonight):
         Debugging widgets
         Rebuild widget in SwiftUI
-        
+        Widget based on network data
     
 
 Project description (What we will do):
 
     Come up with a simple (can be done in an hour and a half) project that hits as many of those concepts as possible
+    
+    Widget with updating data
 
 
 What done looks like:
