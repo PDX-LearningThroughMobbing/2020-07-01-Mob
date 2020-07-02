@@ -28,8 +28,9 @@ Mobbing Protocol (Agree to or change these durations, changes might have to be m
         We’ll take breaks after 4 turns
         Those breaks will be 5 minutes long
 
-Project Description
-    Things we want to do (Capture the concepts people would like to work on or learn about tonight):
+## Project Description
+Things we want to do (Capture the concepts people would like to work on or learn about tonight):
+        
         Debugging widgets
         Rebuild widget in SwiftUI
         Widget based on network data
@@ -48,4 +49,6 @@ Project description (What we will do):
 
 
 What done looks like:
+    
+    
     Discuss as a group how far into the project description we want to go, and any details that we likely want to hammer out in advance.

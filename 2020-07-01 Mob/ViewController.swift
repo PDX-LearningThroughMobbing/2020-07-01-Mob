@@ -6,16 +6,17 @@
 //  Copyright © 2020 Sam Foulger. All rights reserved.
 //
 
-import UIKit
 
+import SwiftUI
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+struct Hello: View {
+    var body: some View {
+        Text("Hello")
     }
-
-
 }
 
+struct ViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        Hello()
+    }
+}
