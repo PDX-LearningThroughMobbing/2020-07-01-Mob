@@ -59,8 +59,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 }
 
 struct BodyView : View {
-    func getCurrentTime() -> DateInterval {
-        
+    func getCurrentTime() -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .none
+        formatter.timeStyle = .long
+        return formatter.string(from: Date())
     }
     
     func setTime() {
@@ -69,7 +72,7 @@ struct BodyView : View {
     
     var body: some View {
         HStack {
-            Text("00:00:00")
+            Text(verbatim: getCurrentTime())
             Text("0000")
             Text("00")
         }
