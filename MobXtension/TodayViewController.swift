@@ -19,22 +19,30 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
 
     override func viewDidLoad() {
+        print("load")
         super.viewDidLoad()
         
-        let view = BodyView()
-        let controller = UIHostingController(rootView: view)
-        
-        addChild(controller)
-        self.view.addSubview(controller.view)
-        controller.view.translatesAutoresizingMaskIntoConstraints = false
+
+//        controller.view.translatesAutoresizingMaskIntoConstraints = false
+
         
 //        rootView = BodyView()
         // Do any additional setup after loading the view.
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let bodyView = BodyView()
+        let controller = UIHostingController(rootView: bodyView)
+        print("here")
+        addChild(controller)
+        self.view.addSubview(controller.view)
+        controller.view.frame = view.bounds
+    }
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        self
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {

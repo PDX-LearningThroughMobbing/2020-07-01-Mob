@@ -442,7 +442,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MobXtension/MobXtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LF42FY64G6;
+				DEVELOPMENT_TEAM = NQ5FBJE8P8;
 				INFOPLIST_FILE = MobXtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +463,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MobXtension/MobXtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LF42FY64G6;
+				DEVELOPMENT_TEAM = NQ5FBJE8P8;
 				INFOPLIST_FILE = MobXtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -600,7 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "2020-07-01 Mob/2020-07-01 Mob.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LF42FY64G6;
+				DEVELOPMENT_TEAM = NQ5FBJE8P8;
 				INFOPLIST_FILE = "2020-07-01 Mob/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
