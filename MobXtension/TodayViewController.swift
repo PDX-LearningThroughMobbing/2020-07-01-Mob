@@ -71,16 +71,21 @@ struct BodyView : View {
     }
     
     @State private var currentTime: String = ""
+    @State private var counter: Int = 0
+    @State private var randomCounter: Int = 0
+
     
     var body: some View {
         HStack {
             Text(verbatim: currentTime)
-            Text("0000")
-            Text("00")
+            Text(verbatim: "\(counter)")
+            Text(verbatim: "\(randomCounter)")
         }
-        .onReceive(Timer.publish(every: 1.0, on: RunLoop.main, in: .default)) { _ in
-                       self.currentTime = self.getCurrentTime()
-               }
+        .onReceive(Timer.publish(every: 1.0, on: RunLoop.main, in: .default).autoconnect()) { _ in
+            self.currentTime = self.getCurrentTime()
+            self.counter += 1
+            self.randomCounter += Int.random(in: 1...10)
+        }
     }
 }
 
