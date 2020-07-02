@@ -21,6 +21,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         print("load")
         super.viewDidLoad()
+        view.backgroundColor = .clear
         
 
 //        controller.view.translatesAutoresizingMaskIntoConstraints = false
@@ -34,6 +35,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewWillAppear(animated)
         let bodyView = BodyView()
         let controller = UIHostingController(rootView: bodyView)
+        controller.view.backgroundColor = .clear
         print("here")
         addChild(controller)
         self.view.addSubview(controller.view)
@@ -63,7 +65,7 @@ struct BodyView : View {
             Text("00:00:00")
             Text("0000")
             Text("00")
-        }
+        }.background(Color.clear)
     }
 }
 
