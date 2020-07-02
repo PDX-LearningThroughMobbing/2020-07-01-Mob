@@ -21,7 +21,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         print("load")
         super.viewDidLoad()
-        view.backgroundColor = .clear
+        
         
 
 //        controller.view.translatesAutoresizingMaskIntoConstraints = false
@@ -35,8 +35,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewWillAppear(animated)
         let bodyView = BodyView()
         let controller = UIHostingController(rootView: bodyView)
-        controller.view.backgroundColor = .clear
-        print("here")
+        
         addChild(controller)
         self.view.addSubview(controller.view)
         controller.view.frame = view.bounds
@@ -60,12 +59,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 }
 
 struct BodyView : View {
+    func getCurrentTime() -> DateInterval {
+        
+    }
+    
+    func setTime() {
+        
+    }
+    
     var body: some View {
         HStack {
             Text("00:00:00")
             Text("0000")
             Text("00")
-        }.background(Color.clear)
+        }
     }
 }
 
