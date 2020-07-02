@@ -12,12 +12,19 @@ import NotificationCenter
 
 class TodayViewController: UIHostingController<BodyView>, NCWidgetProviding {
 
-    override var body: BodyView {
-        BodyView()
+    override var rootView: BodyView {
+        get {
+            BodyView()
+        }
+        set {
+            
+        }
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
         
@@ -34,11 +41,17 @@ class TodayViewController: UIHostingController<BodyView>, NCWidgetProviding {
 }
 
 struct BodyView : View {
-    var body: BodyView.Body {
+    var body: some View {
         HStack {
             Text("00:00:00")
             Text("0000")
             Text("00")
         }
+    }
+}
+
+struct TodayViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }

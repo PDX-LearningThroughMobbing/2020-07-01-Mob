@@ -20,6 +20,7 @@
 		20AFC6CA24AD650A0042AB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AFC6C824AD650A0042AB86 /* LaunchScreen.storyboard */; };
 		20AFC6D524AD650A0042AB86 /* _020_07_01_MobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AFC6D424AD650A0042AB86 /* _020_07_01_MobTests.swift */; };
 		20AFC6E024AD650A0042AB86 /* _020_07_01_MobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AFC6DF24AD650A0042AB86 /* _020_07_01_MobUITests.swift */; };
+		20AFC6EE24AD78BF0042AB86 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8F0C824AD74E80084027A /* TodayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -368,6 +369,7 @@
 			files = (
 				20AFC6BF24AD65070042AB86 /* ViewController.swift in Sources */,
 				20AFC6BB24AD65070042AB86 /* AppDelegate.swift in Sources */,
+				20AFC6EE24AD78BF0042AB86 /* TodayViewController.swift in Sources */,
 				20AFC6BD24AD65070042AB86 /* SceneDelegate.swift in Sources */,
 				20AFC6C524AD65070042AB86 /* _020_07_01_Mob.xcdatamodeld in Sources */,
 			);
