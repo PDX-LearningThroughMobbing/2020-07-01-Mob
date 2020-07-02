@@ -52,3 +52,27 @@ What done looks like:
     
     
     Discuss as a group how far into the project description we want to go, and any details that we likely want to hammer out in advance.
+    
+    
+    
+    Resources and sessions
+    
+    Unsafe Swift
+    Swift Pointers
+    Changes to the Objective C Runtime
+    Why is my app being killed?
+    
+    Swift in AWS Lambda
+    Test to fail
+    
+    Pointfree.co
+        Functional programming in Swift
+        How to ditch protocols and use Structs
+            What's new in Collection Views
+        How to implement a whole composable architecture
+        
+    2nding Pointfree
+    
+    All the SwiftUI track of WWDC (no intro)
+    
+    
