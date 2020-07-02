@@ -70,12 +70,17 @@ struct BodyView : View {
         
     }
     
+    @State private var currentTime: String = ""
+    
     var body: some View {
         HStack {
-            Text(verbatim: getCurrentTime())
+            Text(verbatim: currentTime)
             Text("0000")
             Text("00")
         }
+        .onReceive(Timer.publish(every: 1.0, on: RunLoop.main, in: .default)) { _ in
+                       self.currentTime = self.getCurrentTime()
+               }
     }
 }
 
