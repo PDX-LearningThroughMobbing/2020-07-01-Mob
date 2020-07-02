@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import SwiftUI
 import NotificationCenter
 
-class TodayViewController: UIViewController, NCWidgetProviding {
-        
+class TodayViewController: UIHostingController<BodyView>, NCWidgetProviding {
+
+    override var body: BodyView {
+        BodyView()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,4 +31,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     
+}
+
+struct BodyView : View {
+    var body: BodyView.Body {
+        HStack {
+            Text("00:00:00")
+            Text("0000")
+            Text("00")
+        }
+    }
 }
