@@ -10,22 +10,31 @@ import UIKit
 import SwiftUI
 import NotificationCenter
 
-class TodayViewController: UIHostingController<BodyView>, NCWidgetProviding {
-
-    override var rootView: BodyView {
-        get {
-            BodyView()
-        }
-        set {
-            
-        }
-    }
-
+class TodayViewController: UIViewController, NCWidgetProviding {
     
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder, rootView: BodyView())
+//    }
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let view = BodyView()
+        let controller = UIHostingController(rootView: view)
+        
+        addChild(controller)
+        self.view.addSubview(controller.view)
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        
+//        rootView = BodyView()
         // Do any additional setup after loading the view.
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
